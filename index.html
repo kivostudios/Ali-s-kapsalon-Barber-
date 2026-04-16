@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ali's Kapsalon — Gentlemen's Barber Shop Tilburg</title>
 <meta name="description" content="Premium barbershop in Tilburg. Ervaar de ultieme verzorgingservaring bij Ali's Kapsalon.">
+<meta name="theme-color" content="#1C1714">
+<meta name="keywords" content="kapper Tilburg, barbershop Tilburg, Ali's Kapsalon, knippen, scheren, baard, Besterdring, herenkapper">
+<meta name="author" content="Ali's Kapsalon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ali's Kapsalon — Gentlemen's Barber Shop Tilburg">
+<meta property="og:description" content="Premium barbershop in Tilburg. Vakmanschap, stijl en persoonlijke aandacht.">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ali's Kapsalon — Tilburg">
+<meta name="twitter:description" content="Premium barbershop in Tilburg.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231C1714'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' fill='%23B8964E' text-anchor='middle' font-weight='700' font-style='italic'%3EA%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -141,16 +153,14 @@ nav.scrolled .nav-logo-img{height:38px}
 .gallery-header .label::before{display:none}
 .gallery-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--cream);line-height:1.2}
 .gallery-title em{font-style:italic;color:var(--gold)}
-.gallery-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:280px 280px;gap:10px;max-width:1200px;margin:0 auto}
+.gallery-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:320px 320px;gap:10px;max-width:1200px;margin:0 auto}
 .gal-item{overflow:hidden;position:relative;cursor:pointer}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease,filter .5s;filter:brightness(.75) saturate(.9)}
 .gal-item:hover img{transform:scale(1.08);filter:brightness(.95) saturate(1)}
-.gal-item:nth-child(1){grid-column:span 5}
-.gal-item:nth-child(2){grid-column:span 4}
-.gal-item:nth-child(3){grid-column:span 3}
-.gal-item:nth-child(4){grid-column:span 3}
-.gal-item:nth-child(5){grid-column:span 5}
-.gal-item:nth-child(6){grid-column:span 4}
+.gal-item:nth-child(1){grid-column:span 7}
+.gal-item:nth-child(2){grid-column:span 5}
+.gal-item:nth-child(3){grid-column:span 5}
+.gal-item:nth-child(4){grid-column:span 7}
 
 /* HOURS */
 .hours-section{display:grid;grid-template-columns:1fr 1fr}
@@ -368,8 +378,8 @@ footer{background:var(--brown-deep);padding:5rem 4rem 2rem}
     <a href="#reservation" class="hero-cta" data-i18n="hero_cta">Book Seat Now!</a>
   </div>
   <div class="hero-indicator">
-    <div class="hero-indicator-num">2</div>
-    <div class="hero-indicator-text">Next</div>
+    <div class="hero-indicator-num">01</div>
+    <div class="hero-indicator-text" data-i18n="hero_indicator">Besterdring 49 &mdash; Tilburg</div>
     <div class="hero-indicator-line"></div>
   </div>
   <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
@@ -489,7 +499,7 @@ footer{background:var(--brown-deep);padding:5rem 4rem 2rem}
       </div>
       <div class="fstep" data-s="3">
         <div class="fg-row"><div class="fg"><label data-i18n="form_firstname">Voornaam *</label><input type="text" id="fn" data-i18n-ph="ph_firstname" placeholder="Bijv. Mohammed"></div><div class="fg"><label data-i18n="form_lastname">Achternaam *</label><input type="text" id="ln" data-i18n-ph="ph_lastname" placeholder="Bijv. de Vries"></div></div>
-        <div class="fg-row"><div class="fg"><label data-i18n="form_phone">Telefoon *</label><input type="tel" id="ph" placeholder="06 1234 5678"></div><div class="fg"><label>E-mail</label><input type="email" id="em" data-i18n-ph="ph_email" placeholder="naam@voorbeeld.nl"></div></div>
+        <div class="fg-row"><div class="fg"><label data-i18n="form_phone">Telefoon *</label><input type="tel" id="ph" placeholder="06 1234 5678"></div><div class="fg"><label data-i18n="form_email">E-mail (optioneel)</label><input type="email" id="em" data-i18n-ph="ph_email" placeholder="naam@voorbeeld.nl"></div></div>
         <div class="fg-row"><div class="fg wide"><label data-i18n="form_notes">Opmerkingen</label><textarea id="nt" data-i18n-ph="ph_notes" placeholder="Speciale wensen..."></textarea></div></div>
         <div class="fnav"><button class="fb fb-back" id="b3" data-i18n="btn_back">&#8592; Terug</button><button class="fb fb-next" id="n3" disabled data-i18n="btn_next">Volgende &#8594;</button></div>
       </div>
@@ -501,7 +511,7 @@ footer{background:var(--brown-deep);padding:5rem 4rem 2rem}
     <div class="bk-success" id="bkOk">
       <div class="bk-success-check">&#10003;</div>
       <h3 data-i18n="success_title">Afspraak <em>Bevestigd!</em></h3>
-      <p data-i18n="success_text">Bedankt voor je reservering. We kijken ernaar uit om je te verwelkomen bij Ali's Kapsalon. Je ontvangt een bevestiging via WhatsApp.</p>
+      <p data-i18n="success_text">Je wordt nu doorgestuurd naar WhatsApp om je afspraak te bevestigen. Stuur het bericht en wij komen zo snel mogelijk bij je terug!</p>
       <button class="hero-cta" onclick="resetBk()" data-i18n="success_btn">Nieuwe Afspraak</button>
     </div>
   </div>
@@ -545,10 +555,10 @@ const translations={
     label_reserve:'&#10022; Reserveren &#10022;',res_title:'Maak Een <em>Afspraak</em>',res_sub:'Kies je behandeling, datum en tijd &#8212; wij zorgen voor de rest.',
     step_service:'Dienst',step_datetime:'Datum &amp; Tijd',step_details:'Gegevens',step_confirm:'Bevestigen',
     cal_date:'Kies een datum',cal_time:'Kies een tijd',cal_select_date:'Selecteer eerst een datum',
-    form_firstname:'Voornaam *',form_lastname:'Achternaam *',form_phone:'Telefoon *',form_notes:'Opmerkingen',
+    form_firstname:'Voornaam *',form_lastname:'Achternaam *',form_phone:'Telefoon *',form_email:'E-mail (optioneel)',form_notes:'Opmerkingen',
     ph_firstname:'Bijv. Mohammed',ph_lastname:'Bijv. de Vries',ph_email:'naam@voorbeeld.nl',ph_notes:'Speciale wensen...',
     btn_back:'&#8592; Terug',btn_next:'Volgende &#8594;',btn_confirm:'&#10003; Bevestig Afspraak',
-    success_title:'Afspraak <em>Bevestigd!</em>',success_text:'Bedankt voor je reservering. We kijken ernaar uit om je te verwelkomen bij Ali\'s Kapsalon. Je ontvangt een bevestiging via WhatsApp.',success_btn:'Nieuwe Afspraak',
+    success_title:'Bijna <em>Klaar!</em>',success_text:'Je wordt nu doorgestuurd naar WhatsApp om je afspraak te bevestigen. Stuur het bericht en wij komen zo snel mogelijk bij je terug!',success_btn:'Nieuwe Afspraak',hero_indicator:'Besterdring 49 &mdash; Tilburg',
     footer_brand:'Premium barbershop in het hart van Tilburg. Waar stijl en vakmanschap samenkomen.',
     months:['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'],
     dnames:['Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag'],
@@ -577,10 +587,10 @@ const translations={
     label_reserve:'&#10022; Reservations &#10022;',res_title:'Make An <em>Appointment</em>',res_sub:'Choose your service, date and time &#8212; we\'ll take care of the rest.',
     step_service:'Service',step_datetime:'Date &amp; Time',step_details:'Details',step_confirm:'Confirm',
     cal_date:'Choose a date',cal_time:'Choose a time',cal_select_date:'Please select a date first',
-    form_firstname:'First Name *',form_lastname:'Last Name *',form_phone:'Phone *',form_notes:'Notes',
+    form_firstname:'First Name *',form_lastname:'Last Name *',form_phone:'Phone *',form_email:'Email (optional)',form_notes:'Notes',
     ph_firstname:'E.g. Mohammed',ph_lastname:'E.g. Smith',ph_email:'name@example.com',ph_notes:'Special requests...',
     btn_back:'&#8592; Back',btn_next:'Next &#8594;',btn_confirm:'&#10003; Confirm Appointment',
-    success_title:'Appointment <em>Confirmed!</em>',success_text:'Thank you for your booking. We look forward to welcoming you at Ali\'s Kapsalon. You will receive a confirmation via WhatsApp.',success_btn:'New Appointment',
+    success_title:'Almost <em>There!</em>',success_text:'You\'re being redirected to WhatsApp to confirm your appointment. Send the message and we\'ll get back to you as soon as possible!',success_btn:'New Appointment',hero_indicator:'Besterdring 49 &mdash; Tilburg',
     footer_brand:'Premium barbershop in the heart of Tilburg. Where style and craftsmanship come together.',
     months:['January','February','March','April','May','June','July','August','September','October','November','December'],
     dnames:['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
